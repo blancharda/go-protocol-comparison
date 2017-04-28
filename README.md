@@ -7,6 +7,7 @@ http protocol using json.
 * Golang - 1.8.3
 * docker-engine: 1.12.6
 * make: GNU Make 4.0
+* GRPC: v3
 
 ## Requirements
 * golang
@@ -31,3 +32,7 @@ Or simply
 ```
 make docker
 ```
+
+## Useful references
+* http://www.grpc.io/docs/quickstart/go.html
+* http://www.grpc.io/docs/tutorials/basic/go.html
