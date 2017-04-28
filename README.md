@@ -24,11 +24,12 @@ http protocol using json.
 * test
 ** starts the docker container, runs tests against it
 
-##Usage
+## Usage
 Clean build and package the project with:
- make clean build docker
+```
+make clean build docker
+```
 Or simply
- make docker
-
-
-
+```
+make docker
+```
