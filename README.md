@@ -15,14 +15,12 @@ http protocol using json.
 * a lack of judgement for mediocre code.
 
 ## Make targets
-* clean
-** cleans build artifacts/executables
-* build
-** builds the project
-* docker
-** packages the project in docker
-* test
-** starts the docker container, runs tests against it
+Target | Description
+------ | -------------------------
+clean  | cleans build artifacts/executables
+build  | builds the project
+docker | packages the project in docker
+test   | starts the docker container, runs tests against it
 
 ## Usage
 Clean build and package the project with:
