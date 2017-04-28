@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package submit_image;
+
+// SubmitImage defines the interface exported by the server.
+service SubmitImage {
+// Submit is a simple(ish) RPC
+//
+// Obtains an image from a request.
+//
+// Returns a boolean indicating a successful decode.
+rpc Submit(Image) returns (SubmissionResponse) {}
+}
+
+// Image defines the structure of an image to be submitted
+message Image {
+    // Data is the byte field in which the raw image data is stored
+    bytes Data = 1;
+}
+
+// Submission response only contains a boolean indicating successful decoding of the image data
+message SubmissionResponse {
+    // Success is a boolean indicating successful a image decode
+    bool Success = 1;
+}
